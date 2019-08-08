@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: idness
 permalink: /about/
 ---
 
-This is the blog for Adam Silverman.
+The id of ness.
