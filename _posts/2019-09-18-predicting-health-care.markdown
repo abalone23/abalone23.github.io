@@ -31,11 +31,11 @@ df['agebrack'] = pd.cut(df['age'], [17, 25, 64, 120], labels=['young_adult', 'ad
 
 Since most of the categorical features contained more categories than necessary, I narrowed down the scope. For example, the
 marital status feature, `MARST`, contained:
-> 1-Married, spouse present
-> 2-Married, spouse absent
-> 3-Separated
-> 4-Divorced
-> 5-Widowed
+> 1-Married, spouse present 
+> 2-Married, spouse absent 
+> 3-Separated 
+> 4-Divorced 
+> 5-Widowed 
 > 6-Never married/single
 
 I grouped `Married, spouse absent` into the `Married, spouse present` category, `Separated` to `Divorced`, and `Widowed` to `Never married/single`
@@ -50,10 +50,13 @@ As a final step, I converted the categorical features using [dummy variables](ht
 # Model
 Once the features were binned and I tried Random Forest, Logistic Regression and XGBoost classification models. For Random Forest and Logistic Regression, I used the `class_weight='balanced'` option and for XGBoost I used SMOTE oversampling. Although XGBoost performed slightly better based on a higher ROC/AUC score, which tells how much a model is capable of distinguishing between classes such that the higher the score is a good measure of separability, I decided to use Logistic Regression for it's interpretability.
 
-For the Logistic Regression model, I performed Hyperparameter tuning using `GridSearchCV` with `class_weight='balanced'`. I also made sure to fit the model with sample_weight option due to the dataset being weighted.
+For the Logistic Regression model, I performed hyperparameter tuning using `GridSearchCV` with `class_weight='balanced'`. I also made sure to fit the model with the sample_weight option due to the dataset being weighted. I used the recall score to determine the best C parameter to use. C is described in the [sklearn doc](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) as:
+> Inverse of regularization strength; must be a positive float. Like in support vector machines, smaller values specify stronger regularization.
 
 # The App
 ![hcbtn app]({{ site.url }}/assets/hcbtn-graph.png)
 The app, [healthcarebythenumbers.com](https://www.healthcarebythenumbers.com), is Flask-based and uses [SQL Alchemy](https://www.sqlalchemy.org/), an "open-source SQL toolkit and object-relational mapper for the Python" that connects to a [PostgreSQL](https://www.postgresql.org/) database.
 
 In addition to displaying a state-by-state breakdown of uninsured rates among various groups, it also features a [prediction calculator](https://www.healthcarebythenumbers.com/predict) where one can enter various demographic characteristics to predict the likelihood of having healh care insurance.
+
+[Github](https://github.com/abalone23/hcbtn)
