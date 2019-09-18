@@ -4,6 +4,8 @@ title:  "Predicting the Likelihood of having Health Care Insurance"
 date:   2019-09-18 09:35:15 -0700
 categories: classification, machine learning
 ---
+![Healthcare]({{ site.url }}/assets/natasha-spencer-_hH0dC6A-FM-unsplash.jpg)
+
 # Background
 Health care insurance can be found in both the public and private marketplace and due to financial constraints some Americans are uninsured as well. Lack of health insurance results in worse preventive care and services for major health conditions and chronic diseases. By using a classification model on a sample US population from 2017 I propose to analyze which demographic characteristics result in Americans having health insurance or not and use this information in a classification model to predict the likelihood of someone having health insurance based on demographic features they provide.
 
