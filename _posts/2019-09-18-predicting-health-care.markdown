@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Predicting the Likelihood of having Health Care Insurance"
+date:   2019-09-18 09:35:15 -0700
+categories: classification, machine learning
+---
+# Background
+Health care insurance can be found in both the public and private marketplace and due to financial constraints some Americans are uninsured as well. Lack of health insurance results in worse preventive care and services for major health conditions and chronic diseases. By using a classification model on a sample US population from 2017 I propose to analyze which demographic characteristics result in Americans having health insurance or not and use this information in a classification model to predict the likelihood of someone having health insurance based on demographic features they provide.
+
+# Data
+The data that was used comes from the 2017 American Community Survey. This is a 3 million row dataset with weighted sample that represent the United States population.
+
+# Exploratory Data Analysis (EDA)
+Most data was categorical such as marital status, English ability and education. I binned age and income data.
+
+# Model
+I tried a Random Forest, Logistic Regression and XGBoost model. For Random Forest and Logistic Regression I used the class_weight=balanced option and for XGBoost I used SMOTE oversampling. ALthough XGBoost performed slightly better based on a higher ROC/AUC score, which tells how much a model is capable of distinguishing between classes such that the higher the score is a good measure of separability, I decided to use Logistic Regression for it's Interpretability.
+
+For the Logistic Regression model, I performed HYperParameter tuning usingmGridSearchCV with class_weight-'balanced'. I also made sure to fit the model with sample_weight option due to the dataset being weighted.
+
+# The App
+The app, [healthcarebythenumbers.com] (healthcarebythenumbers.com), contains a form where one can enter various demographic characteristics which is used to predict the likelihood of having healh care insurance. It also displays uninsured rates and the characteristics associated with being uninsured for each state.
