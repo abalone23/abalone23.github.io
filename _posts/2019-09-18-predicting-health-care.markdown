@@ -2,7 +2,7 @@
 layout: post
 title:  "Predicting the Likelihood of having Health Care Insurance"
 date:   2019-09-18 09:35:15 -0700
-categories: machine learning
+categories: machine_learning
 ---
 ![Healthcare]({{ site.url }}/assets/natasha-spencer-_hH0dC6A-FM-unsplash.jpg)
 Photo by [Natasha Spencer](https://unsplash.com/@totalshape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
