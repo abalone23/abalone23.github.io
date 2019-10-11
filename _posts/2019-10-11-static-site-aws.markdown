@@ -38,7 +38,7 @@ The process for setting up a static website with SSL is:
 ## Purchase (or transfer domain) to Route 53
 
 ## Create two S3 buckets
-![s3-config]({{ site.url }}/assets/s3-potl-config.jpg)
+![S3 Config]({{ site.url }}/assets/s3-potl-config.png)
 
 ## Create one certificate
 
