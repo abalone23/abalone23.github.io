@@ -11,7 +11,7 @@ email: adam.silverman@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The id of ness. Writing from Adam Silverman
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://idness.com" # the base hostname & protocol for your site
+url: "https://idness.com" # the base hostname & protocol for your site
 github_username:  abalone23
 
 # Build settings
