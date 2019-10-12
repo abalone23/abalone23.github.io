@@ -1,15 +1,8 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: idness
 email: adam.silverman@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  The id of ness. Writing from Adam Silverman
+  The id of ness.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://idness.com" # the base hostname & protocol for your site
 github_username:  abalone23
@@ -17,4 +10,4 @@ github_username:  abalone23
 # Build settings
 markdown: kramdown
 
-theme: jekyll-theme-tactile
+theme: minima

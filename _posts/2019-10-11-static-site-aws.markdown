@@ -5,7 +5,7 @@ date:   2019-10-11 09:35:15 -0700
 categories: cloud
 tags: [aws]
 ---
-![aws]({{ site.url }}/assets/flickr-teezeh-aws.jpg)
+![aws]({{ site.url }}/assets/posts_images/flickr-teezeh-aws.jpg)
 Photo by [Thomas Cloer](https://www.flickr.com/photos/teezeh/15670725648/)
 
 ## Background
