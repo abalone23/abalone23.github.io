@@ -31,18 +31,27 @@ The process for setting up a static website with SSL is:
     * www.example.com
     * example.com
 3. Create one certificate
-4. Create two CloudFront origins
+4. Create two CloudFront distributions
 5. Configure Route 53
 
 ## Steps
 ### Purchase (or transfer domain) to Route 53
 
 ### Create two S3 buckets
-![S3 Config]({{ site.url }}/assets/s3-potl-config.png)
+![S3 www Config]({{ site.url }}/assets/s3-www.png)
+
+![S3 Config]({{ site.url }}/assets/s3-no-www.png)
 
 ### Create one certificate
 
-### Create two CloudFront origins
+### Create two CloudFront distributions
+![CloudFront Config]({{ site.url }}/assets/cf-dist-www.png)
+
+![CloudFront Config]({{ site.url }}/assets/cf-origin-www.png)
+
+![CloudFront Config]({{ site.url }}/assets/cf-dist-no-www.png)
+
+![CloudFront Config]({{ site.url }}/assets/cf-origin-no-www.png)
 
 ### Configure Route 53
 
