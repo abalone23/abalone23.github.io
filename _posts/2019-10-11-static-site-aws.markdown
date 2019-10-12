@@ -45,28 +45,28 @@ Endpoint : http://www.pulseoftheland.com.s3-website-us-west-1.amazonaws.com (www
 ![S3 www Config]({{ site.url }}/assets/s3-www.png)
 
 Redirect requests (pulseoftheland.com)  
-![S3 Config]({{ site.url }}/posts_images/assets/s3-no-www.png)
+![S3 Config]({{ site.url }}/assets/posts_images/s3-no-www.png)
 
 ### Create one certificate
 Certificate Manager >> Request a certificate  
 
 Certificate settings (www.pulseoftheland.com and pulseoftheland.com)  
-![Certificate Manager Config]({{ site.url }}/posts_images/assets/cm-potl.png)
+![Certificate Manager Config]({{ site.url }}/assets/posts_images/cm-potl.png)
 
 ### Create two CloudFront distributions
 CloudFront >> Create Distribution >> Web  
 
 Distribution settings (www.pulseoftheland.com):  
-![CloudFront Config]({{ site.url }}/posts_images/assets/cf-dist-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-dist-www.png)
 
 Origin settings (www.pulseoftheland.com):  
-![CloudFront Config]({{ site.url }}/posts_images/assets/cf-origin-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-origin-www.png)
 
 Distribution settings (pulseoftheland.com):
-![CloudFront Config]({{ site.url }}/posts_images/assets/cf-dist-no-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-dist-no-www.png)
 
 Origin settings (pulseoftheland.com):  
-![CloudFront Config]({{ site.url }}/posts_images/assets/cf-origin-no-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-origin-no-www.png)
 
 ### Configure Route 53
 

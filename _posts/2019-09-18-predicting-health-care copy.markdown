@@ -4,7 +4,7 @@ title:  "Predicting the Likelihood of having Health Care Insurance"
 date:   2019-09-18 09:35:15 -0700
 categories: machine_learning
 ---
-![Healthcare]({{ site.url }}/posts_images/assets/natasha-spencer-_hH0dC6A-FM-unsplash.jpg)
+![Healthcare]({{ site.url }}/assets/posts_images/natasha-spencer-_hH0dC6A-FM-unsplash.jpg)
 Photo by [Natasha Spencer](https://unsplash.com/@totalshape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
 
 # Background
@@ -54,7 +54,7 @@ For the Logistic Regression model, I performed hyperparameter tuning using `Grid
 > Inverse of regularization strength; must be a positive float. Like in support vector machines, smaller values specify stronger regularization.
 
 # The App
-![hcbtn app]({{ site.url }}/posts_images/assets/hcbtn-graph.png)
+![hcbtn app]({{ site.url }}/assets/posts_images/hcbtn-graph.png)
 The app, [healthcarebythenumbers.com](https://www.healthcarebythenumbers.com), is Flask-based and uses [SQL Alchemy](https://www.sqlalchemy.org/), an "open-source SQL toolkit and object-relational mapper for the Python" that connects to a [PostgreSQL](https://www.postgresql.org/) database.
 
 In addition to displaying a state-by-state breakdown of uninsured rates among various groups, it also features a [prediction calculator](https://www.healthcarebythenumbers.com/predict) where one can enter various demographic characteristics to predict the likelihood of having healh care insurance.
