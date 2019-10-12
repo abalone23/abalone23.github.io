@@ -2,7 +2,8 @@
 layout: post
 title:  "How to Set Up a Static Website on AWS using S3, CloudFront and Route 53"
 date:   2019-10-11 09:35:15 -0700
-categories: machine_learning
+categories: cloud
+tags: [aws]
 ---
 ![aws]({{ site.url }}/assets/flickr-teezeh-aws.jpg)
 Photo by [Thomas Cloer](https://www.flickr.com/photos/teezeh/15670725648/)
