@@ -42,7 +42,7 @@ The process for setting up a static website with SSL is:
 S3 >> Properties >> Static website hosting  
 
 Endpoint : http://www.pulseoftheland.com.s3-website-us-west-1.amazonaws.com (www.pulseoftheland.com)  
-![S3 www Config]({{ site.url }}/assets/s3-www.png)
+![S3 www Config]({{ site.url }}/assets/posts_images/s3-www.png)
 
 Redirect requests (pulseoftheland.com)  
 ![S3 Config]({{ site.url }}/assets/posts_images/s3-no-www.png)
