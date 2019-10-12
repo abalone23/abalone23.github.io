@@ -39,19 +39,33 @@ The process for setting up a static website with SSL is:
 ### Purchase (or transfer domain) to Route 53
 
 ### Create two S3 buckets
+S3 >> Properties >> Static website hosting  
+
+Endpoint : http://www.pulseoftheland.com.s3-website-us-west-1.amazonaws.com (www.pulseoftheland.com)  
 ![S3 www Config]({{ site.url }}/assets/s3-www.png)
 
+Redirect requests (pulseoftheland.com)  
 ![S3 Config]({{ site.url }}/assets/s3-no-www.png)
 
 ### Create one certificate
+Certificate Manager >> Request a certificate  
+
+Certificate settings (www.pulseoftheland.com and pulseoftheland.com)  
+![Certificate Manager Config]({{ site.url }}/assets/cm-potl.png)
 
 ### Create two CloudFront distributions
+CloudFront >> Create Distribution >> Web  
+
+Distribution settings (www.pulseoftheland.com):  
 ![CloudFront Config]({{ site.url }}/assets/cf-dist-www.png)
 
+Origin settings (www.pulseoftheland.com):  
 ![CloudFront Config]({{ site.url }}/assets/cf-origin-www.png)
 
+Distribution settings (pulseoftheland.com):
 ![CloudFront Config]({{ site.url }}/assets/cf-dist-no-www.png)
 
+Origin settings (pulseoftheland.com):  
 ![CloudFront Config]({{ site.url }}/assets/cf-origin-no-www.png)
 
 ### Configure Route 53
