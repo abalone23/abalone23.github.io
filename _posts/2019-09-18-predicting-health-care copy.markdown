@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Predicting the Likelihood of having Health Care Insurance"
+excerpt: By using a classification model on a sample US population from 2017 I analyzed demographic characteristics
 date:   2019-09-18 09:35:15 -0700
 categories: machine_learning
 tags: xgboost, eda
