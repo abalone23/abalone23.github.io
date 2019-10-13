@@ -28,8 +28,11 @@ df = pd.DataFrame(0, index=np.arange(100), columns=np.arange(30))
 To override these settings (Pandas 0.25.1):
 
 ```python
-pd.options.display.max_columns = None # display all columns
-pd.options.display.max_rows = None # display all rows
+# display all columns
+pd.options.display.max_columns = None
+
+# display all rows
+pd.options.display.max_rows = None
 ```
 
 ![jupyter default]({{ site.url }}/assets/posts_images/jupyter-colrows-all.png){:width="500px"}
