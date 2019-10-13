@@ -2,7 +2,7 @@
 layout: post
 title:  "First Post"
 date:   2019-08-08 13:35:15 -0700
-categories: Testing
+categories: testing
 ---
 This is a test post.
 
