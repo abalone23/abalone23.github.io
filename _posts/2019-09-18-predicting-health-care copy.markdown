@@ -2,7 +2,8 @@
 layout: post
 title:  "Predicting the Likelihood of having Health Care Insurance"
 date:   2019-09-18 09:35:15 -0700
-categories: Machine_Learning
+categories: machine_learning
+tags: xgboost, eda
 ---
 ![Healthcare]({{ site.url }}/assets/posts_images/natasha-spencer-_hH0dC6A-FM-unsplash.jpg)
 Photo by [Natasha Spencer](https://unsplash.com/@totalshape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash

@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "How to Set Up a Static Website on AWS using S3, CloudFront and Route 53"
+excerpt: Hosting a static web site on Amazon S3 is secure, cheap and convenient.
 date:   2019-10-11 09:35:15 -0700
 categories: cloud
-tags: [aws]
+tags: aws
 ---
+
 ![aws]({{ site.url }}/assets/posts_images/flickr-teezeh-aws.jpg)
 Photo by [Thomas Cloer](https://www.flickr.com/photos/teezeh/15670725648/)
 
