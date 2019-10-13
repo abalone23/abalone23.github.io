@@ -42,34 +42,36 @@ The process for setting up a static website with SSL is:
 S3 >> Properties >> Static website hosting  
 
 Endpoint : http://www.pulseoftheland.com.s3-website-us-west-1.amazonaws.com (www.pulseoftheland.com)  
-![S3 www Config]({{ site.url }}/assets/posts_images/s3-www.png)
+![S3 www Config]({{ site.url }}/assets/posts_images/s3-www.png){:width="500px"}
 
 Redirect requests (pulseoftheland.com)  
-![S3 Config]({{ site.url }}/assets/posts_images/s3-no-www.png)
+![S3 Config]({{ site.url }}/assets/posts_images/s3-no-www.png){:width="500px"}
 
 ### Create one certificate
 Certificate Manager >> Request a certificate  
 
 Certificate settings (www.pulseoftheland.com and pulseoftheland.com)  
-![Certificate Manager Config]({{ site.url }}/assets/posts_images/cm-potl.png)
+![Certificate Manager Config]({{ site.url }}/assets/posts_images/cm-potl.png){:width="500px"}
 
 ### Create two CloudFront distributions
 CloudFront >> Create Distribution >> Web  
 
 Distribution settings (www.pulseoftheland.com):  
-![CloudFront Config]({{ site.url }}/assets/posts_images/cf-dist-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-dist-www.png){:width="500px"}
 
 Origin settings (www.pulseoftheland.com):  
-![CloudFront Config]({{ site.url }}/assets/posts_images/cf-origin-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-origin-www.png){:width="500px"}
 
 Distribution settings (pulseoftheland.com):
-![CloudFront Config]({{ site.url }}/assets/posts_images/cf-dist-no-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-dist-no-www.png){:width="500px"}
 
 Origin settings (pulseoftheland.com):  
-![CloudFront Config]({{ site.url }}/assets/posts_images/cf-origin-no-www.png)
+![CloudFront Config]({{ site.url }}/assets/posts_images/cf-origin-no-www.png){:width="500px"}
 
 ### Configure Route 53
+![CloudFront Config]({{ site.url }}/assets/posts_images/r53-www.png){:width="500px"}
 
+![CloudFront Config]({{ site.url }}/assets/posts_images/r53-no-www.png){:width="500px"}
 
 ## Verification
 curl -v www.example.com
