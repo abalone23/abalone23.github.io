@@ -11,7 +11,7 @@ tags: aws
 Photo by [Thomas Cloer](https://www.flickr.com/photos/teezeh/15670725648/)
 
 ## Background
-Being able to host a static web site on Amazon S3 is secure, cheap and robust. I will take you through the steps in setting up a static, secure web site in Amazon AWS. One point I would like to emphasize is that `example.com` should redirect to `www.example.com` and `http` should redirect to `https`. Most articles point out the `http` to `https` redirection but some don't mention the redirection from `example.com` to `www.example.com` (and vice-versa).
+Being able to host a static web site on Amazon S3 is secure, cheap and robust. I will take you through the steps in setting up a static, secure web site in Amazon AWS. One point I would like to note is that `example.com` should redirect to `www.example.com` and `HTTP` should redirect to `HTTPS`. Most articles point out the `HTTP` to `HTTPS` redirection but some don't mention the redirection from `example.com` to `www.example.com` (or vice-versa).
 
 ## Services
 In order to set up a static website via AWS the following services will be used:
@@ -20,7 +20,6 @@ In order to set up a static website via AWS the following services will be used:
 
 * [CloudFront](https://aws.amazon.com/cloudfront/)
 > Fast, highly secure and programmable content delivery network (CDN)
-
 
 * [Route 53](https://aws.amazon.com/route53/)
 > A reliable and cost-effective way to route end users to Internet applications
@@ -35,15 +34,18 @@ The process for setting up a static website with SSL is:
     * `www.example.com`
         * html/css/js files are located here
     * `example.com`
-        * redirection to www S3 bucket
+        * redirection to `www.example.com` S3 bucket
 3. Create one certificate
-    * will contain both `example.com` and `www.example.com` domains
+    * contains both `example.com` and `www.example.com` domains
 4. Create two CloudFront distributions
-    * required for `https`
+    * required for `HTTPS`
 5. Configure Route 53 hosted zone
+    * `A Record` routing to CloudFront
 
 ## Steps
 ### Purchase (or transfer domain) to Route 53
+Route 53  
+![S3 www Config]({{ site.url }}/assets/posts_images/r53-domain.png){:width="500px"}
 
 ### Create two S3 buckets
 S3 >> Properties >> Static website hosting  
@@ -54,11 +56,17 @@ Endpoint : `http://www.pulseoftheland.com.s3-website-us-west-1.amazonaws.com`
 Redirect requests (pulseoftheland.com)  
 ![S3 Config]({{ site.url }}/assets/posts_images/s3-no-www.png){:width="500px"}
 
+**Note**: The Amazon S3 website endpoints do not support HTTPS and the buckets must have public read access.   
+* [Hosting a Static Website on Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
+
 ### Create one certificate
 Certificate Manager >> Request a certificate  
 
 Certificate settings (`www.pulseoftheland.com` and `pulseoftheland.com`)  
 ![Certificate Manager Config]({{ site.url }}/assets/posts_images/cm-potl.png){:width="500px"}
+
+**Note**: Certificate must be created in **US East (N. Virginia)** region
+* [How do I install SSL/TLS certificates on Amazon CloudFront](https://aws.amazon.com/premiumsupport/knowledge-center/install-ssl-cloudfront/)
 
 ### Create two CloudFront distributions
 CloudFront >> Create Distribution >> Web  
