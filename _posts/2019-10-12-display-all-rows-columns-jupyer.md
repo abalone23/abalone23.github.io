@@ -35,5 +35,5 @@ pd.options.display.max_columns = None
 pd.options.display.max_rows = None
 ```
 
-Now I can view all columns and rows in the DataFrame:
+It's now possible view all columns and rows in the DataFrame:
 ![jupyter default]({{ site.url }}/assets/posts_images/jupyter-colrows-all.png){:width="500px"}
