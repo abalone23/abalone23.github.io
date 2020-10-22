@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 ---
 
-* [pulseoftheland.com](https://www.pulseoftheland.com) - *tracking sentiment and topics in the USA*
-* [ahdetector.com](https://www.ahdetector.com) - *predicting inconsiderate behavior*
-* [healthcarebythenumbers.com](https://www.healthcarebythenumbers.com) - *predicting healthcare coverage*
+* pulseoftheland.com (inactive) - *tracking sentiment and topics in the USA*
+* ahdetector.com (inactive) - *predicting inconsiderate behavior*
+* healthcarebythenumbers.com (inactive) - *predicting healthcare coverage*
 * [restku.com](https://www.restku.com) - *mock web services*
